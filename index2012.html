@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="STYLESHEET" type="text/css" href="xemedia.css">
+<!--[if lte IE 8]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]--> 
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+var open = false;
+$(document).ready(function() {
+	$('#portfolioTable').find('img').each(function(index) {
+	    $(this).click(function() {
+	    	newSrc = "portfolio/" + $(this).attr('id') + "_slideshow.html";
+	        $('iframe').attr('src', newSrc);
+        	openIframe();
+	    });
+	});
+
+});
+
+function openIframe() {
+	if(!open){
+	    $('iframe').slideDown(6000000, function() {
+		    $('iframe').attr('height', '540px');
+		    
+		});
+	    open = true;
+	} 
+}
+
+
+//$('iframe').slideToggle('slow')
+</script>
+</head>
+
+
+<body>
+<div id="container">
+	<article>
+		<iframe src="portfolio/sears_slideshow.html" width="820" height="0" frameborder="0" scrolling="no" style="border:none"></iframe>
+		<table id="portfolioTable">
+			<tr>
+				<td class="thumb"><img src="portfolio/images/blaw/thumb_blaw.png" id="blaw" /></td>
+				<td class="thumb"><img src="portfolio/images/bsports/thumb_bsports.png" id="bsports" /></td>
+				<td class="thumb"><img src="portfolio/images/citi/thumb_citi.png" id="citi" /></td>
+			</tr>
+			<tr>
+				<td class="divider" colspan="3"></td>
+			</tr>
+			<tr>
+				<td class="thumb"><img src="portfolio/images/sears/thumb_sears.png" id="sears" /></td>
+				<td class="thumb"><img src="portfolio/images/nt/thumb_nt.png" id="nt" /></td>
+				<td class="thumb"><img src="portfolio/images/prudential/thumb_prudential.png" id="prudential" /></td>
+			</tr>
+		</table>
+	</article>
+</div>
+
+</body>
+</html>

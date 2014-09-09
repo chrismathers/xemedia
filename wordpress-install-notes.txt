@@ -1,0 +1,7 @@
+
+/xemedia.com/public   - location of
+.htaccess file - switch btwn index.html and index.php ?
+index.html file which generally calls xemedia folder
+
+/xemedia.com/public/xemedia
+has an wp-content folder left over from the uninstall of wordpress in this folder
