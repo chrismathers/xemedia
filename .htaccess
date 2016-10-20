@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+#DirectoryIndex index.html
+
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# BEGIN WordPress
+
+# END WordPress
