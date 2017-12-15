@@ -27,5 +27,5 @@ wp_head(); ?>
 	<div id="wrapper" class="hfeed">
 		<header id="header" role="banner">
 			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-			<<?php echo $heading_tag; ?> id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><a class="resume" href="http://www.cmathers.com/">view resume</a></<?php echo $heading_tag; ?>>
+			<<?php echo $heading_tag; ?> id="site-title"><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><a class="resume" href="mailto:chris@cmathers.com">chris@cmathers.com</a><a target="_blank" class="resume" href="http://www.cmathers.com/">view resume</a><a target="_blank" class="resume" href="https://github.com/chrismathers">view github</a></<?php echo $heading_tag; ?>>
 		</header><!-- #header -->

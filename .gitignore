@@ -2,3 +2,5 @@
 .idea
 **/.sass-cache
 WS_FTP.LOG
+
+SELECT * FROM `xewp_options` WHERE option_name = 'siteurl' or option_name = 'home'

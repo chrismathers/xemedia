@@ -398,8 +398,9 @@ sub {
 }
 
 #site-title {
-	width:940px;
-	margin:0 auto;
+	width: auto;
+	margin: 0 4%;
+	min-width: 978px;
 	font-size:36px;
 	line-height:100px;
 	text-transform:none;

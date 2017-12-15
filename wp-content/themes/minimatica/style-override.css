@@ -15,12 +15,14 @@
     margin-left: 2em;
 }
 
+
 #site-title a.resume {
     text-align: right;
     display: inline-block;
     float: right;
     font-size: .75em;
     text-decoration: underline;
+    margin-right: 18px;
 }
     #site-title a.resume:hover {
         color: #0044cc;
