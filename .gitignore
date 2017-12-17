@@ -22,3 +22,5 @@ WS_FTP.LOG
 /xmlrpc.php
 /wp-admin/
 /wp-includes/
+/wordpress/wp-admin/
+/wordpress/wp-includes/
